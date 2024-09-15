@@ -1,1 +1,1 @@
-# badminton_tournament_planner
+# Badminton Tournament Planner
