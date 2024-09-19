@@ -1,11 +1,11 @@
-#!/bin/baash
+#!/bin/bash
 
 set -e
 
 create_forlder_structure() {
     base_folder="$1"
     artifact_name="$2"
-    artifact_root="$base_folder/java/de/wolfware/badtourn/$artifact_name"
+    artifact_root="$base_folder/src/main/java/de/wolfware/badtourn/$artifact_name"
 
     adapter_root="$artifact_root/adapter"
     mkdir -p "$adapter_root/persistence" && touch "$adapter_root/persistence/.keep" 
@@ -20,7 +20,6 @@ create_forlder_structure() {
 
     infrastructure_root="$artifact_root/infrastructure"
     mkdir -p "$infrastructure_root/config" && touch "$infrastructure_root/config/.keep"
-
-
 }
 
+create_forlder_structure "/Users/wl/Documents/workspaces/badminton_tournament_planner/organizer" "organizer"
