@@ -1,4 +1,4 @@
-package de.wolfware.badtourn;
+package de.wolfware.badtourn.services.organizer;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

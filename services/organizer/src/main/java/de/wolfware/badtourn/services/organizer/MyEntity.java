@@ -1,4 +1,4 @@
-package de.wolfware.badtourn;
+package de.wolfware.badtourn.services.organizer;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;

@@ -1,8 +1,8 @@
-package de.wolfware.badtourn.organizer.domain.model;
+package de.wolfware.badtourn.services.organizer.domain.model;
 
 import java.time.LocalDate;
 
-public record Participant(
+public record Teilnehmer(
     String name,
     String verein,
     Spielklasse spielklasse,

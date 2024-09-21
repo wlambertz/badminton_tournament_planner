@@ -1,11 +1,11 @@
-package de.wolfware.badtourn.organizer.domain.model;
+package de.wolfware.badtourn.services.organizer.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum Spielklasse implements StringLabel{
+public enum Spielklasse implements StringLabel {
     ERSTE_BUNDESLIGA("1. Bundesliga"),
     ZWEITE_BUNDESLIGA("2. Bundesliga"),
     REGIONALLIGA("Regionalliga"),
@@ -17,6 +17,5 @@ public enum Spielklasse implements StringLabel{
     KREISLIGA("Kreisliga"),
     KREISKLASSE("Kreisklasse");
 
-    private String label;
-    
+    private final String label;
 }
