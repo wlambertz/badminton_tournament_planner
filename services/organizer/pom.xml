@@ -8,7 +8,7 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <parent>
-        <groupId>de.wolfware.badtourn.services</groupId>
+        <groupId>de.wolfware.badtourn</groupId>
         <artifactId>services</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
