@@ -1,5 +1,5 @@
 package de.wolfware.badtourn.services.organizer.domain.model;
 
-public interface StringLabel {
+public sealed interface StringLabel permits Spielklasse {
     String getLabel();
 }
