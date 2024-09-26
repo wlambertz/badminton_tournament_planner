@@ -1,7 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {MatButtonModule} from '@angular/material/button'
 import { RouterOutlet } from '@angular/router';
 import {CommonModule} from '@angular/common';
-import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
