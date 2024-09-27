@@ -7,7 +7,7 @@
   <artifactId>frontend-libraries</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>badtourn > libraries > frontend-libraries</name>
+  <name>badtourn:libraries:frontend-libraries</name>
 
 
   <parent>
