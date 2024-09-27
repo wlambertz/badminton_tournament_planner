@@ -16,6 +16,6 @@
     </parent>
 
     <modules>
-        <module>frontend-libraries</module>
+        <module>frontend-libraries/projects/component-library</module>
     </modules>
 </project>
