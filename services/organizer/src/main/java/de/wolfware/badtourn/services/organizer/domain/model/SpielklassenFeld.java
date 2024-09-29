@@ -6,8 +6,8 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public enum SpielklassenFeld implements FeldTyp {
-    A,
-    B,
-    C,
-    D
+  A,
+  B,
+  C,
+  D
 }

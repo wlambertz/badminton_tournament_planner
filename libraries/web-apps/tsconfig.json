@@ -3,11 +3,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "paths": {
-      "component-library": [
-        "./dist/component-library"
-      ]
-    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
@@ -27,7 +22,12 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "visual-components": [
+        "./dist/visual-components"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

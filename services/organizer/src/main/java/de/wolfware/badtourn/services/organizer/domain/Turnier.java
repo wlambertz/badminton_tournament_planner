@@ -5,11 +5,12 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public record Turnier(
-        long id,
-        String name,
-        LocalDate startDatum,
-        LocalDate endDatum,
-        LocalDateTime anmeldeschluss,
-        List<Object> disziplinen, // todo implement specific class
-        List<Object> spieltage // todo implement specific class
-) {}
+  long id,
+  String name,
+  LocalDate startDatum,
+  LocalDate endDatum,
+  LocalDateTime anmeldeschluss,
+  List<Object> disziplinen, // todo implement specific class
+  List<Object> spieltage // todo implement specific class
+) {
+}

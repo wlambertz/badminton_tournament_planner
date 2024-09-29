@@ -16,6 +16,6 @@
     </parent>
 
     <modules>
-        <module>frontend-libraries/projects/component-library</module>
+        <module>web-apps/projects/visual-components</module>
     </modules>
 </project>
