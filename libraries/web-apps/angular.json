@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/visual-components",
       "sourceRoot": "projects/visual-components/src",
-      "prefix": "lib",
+      "prefix": "wwbt",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
