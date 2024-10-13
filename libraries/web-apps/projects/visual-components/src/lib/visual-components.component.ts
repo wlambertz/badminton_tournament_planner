@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-visual-components',
+  selector: 'wwbt-visual-components',
   standalone: true,
   imports: [],
   template: `
