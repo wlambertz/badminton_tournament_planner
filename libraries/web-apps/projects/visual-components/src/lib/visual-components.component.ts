@@ -1,16 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'wwbt-visual-components',
+  selector: "bt-comp-visual-components",
   standalone: true,
   imports: [],
-  template: `
-    <p>
-      visual-components works!
-    </p>
-  `,
-  styles: ``
+  template: ` <p>visual-components works!</p> `,
+  styles: ``,
 })
-export class VisualComponentsComponent {
-
-}
+export class VisualComponentsComponent {}

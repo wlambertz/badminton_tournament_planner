@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/visual-components",
       "sourceRoot": "projects/visual-components/src",
-      "prefix": "wwbt",
+      "prefix": "bt-comp",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -28,10 +28,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/visual-components/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         },
         "storybook": {
@@ -40,6 +37,9 @@
             "configDir": "projects/visual-components/.storybook",
             "browserTarget": "visual-components:build",
             "compodoc": false,
+            "styles": [
+              "projects/visual-components/src/lib/styles/global-theme.scss"
+            ],
             "port": 6006
           }
         },
@@ -47,6 +47,9 @@
           "builder": "@storybook/angular:build-storybook",
           "options": {
             "configDir": "projects/visual-components/.storybook",
+            "styles": [
+              "projects/visual-components/src/lib/styles/global-theme.scss"
+            ],
             "browserTarget": "visual-components:build",
             "compodoc": false,
             "outputDir": "storybook-static"

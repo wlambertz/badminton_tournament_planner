@@ -1,0 +1,21 @@
+@import "../styles/global-theme.scss";
+
+button {
+  border-radius: 4px;
+  border-width: 0.9px;
+  &.bt-button {
+    background-color: black;
+  }
+  &.mat-mdc-button-base {
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: black;
+  }
+  &[mat-flat-button] {
+    color: white;
+  }
+  &[mat-stroked-button]{
+    border: 1px solid black;
+    color: black;
+  }
+}
