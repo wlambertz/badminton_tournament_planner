@@ -1,14 +1,17 @@
+<ng-template #iconTmpl>
+  <span class="material-symbols-outlined">{{icon}}</span>
+</ng-template>
 <ng-template #btnLabel>
-  <span>></span>{{label !== null ? label : 'go to'}}
+  <span *ngIf="!icon; else iconTmpl">> </span>
+  <span>{{label}}</span>
 </ng-template>
 
-
 @if (buttonType === 'primary') {
-  <button mat-flat-button class="bt-button">
-    <ng-container></ng-container>
+  <button mat-flat-button>
+    <ng-container *ngTemplateOutlet="btnLabel" />
   </button>
 } @else {
-  <button mat-stroked-button class="bt-button">
-    <ng-container/>
+  <button mat-stroked-button>
+    <ng-container *ngTemplateOutlet="btnLabel"/>
   </button>
 }
