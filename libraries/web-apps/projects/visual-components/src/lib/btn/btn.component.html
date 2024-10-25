@@ -1,5 +1,6 @@
-<button mat-stroked-button>>Button</button>
-<br>
-<button mat-flat-button class="bt-button">>Button</button>
-<br>
-<button mat-button><span class="material-symbols-outlined">face</span> Button</button>
+@let btLabel = label;
+@if (buttonType === 'primary') {
+  <button mat-flat-button class="bt-button"><span>></span>{{btLabel !== null ? btLabel : 'go to'}}</button>
+} @else {
+  <button mat-stroked-button class="bt-button"><span>></span>{{btLabel !== null ? btLabel : 'go to'}}</button>
+}
