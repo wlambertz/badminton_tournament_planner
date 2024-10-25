@@ -1,22 +1,28 @@
-import { Meta, StoryObj } from "@storybook/angular";
-import { BtnComponent } from "../lib/btn/btn.component";
+import { Meta, StoryObj } from '@storybook/angular'
+import { BtnComponent } from '../lib/btn/btn.component'
 
 export default {
-  title: "MyLibrary/ExtendedBtnComponent",
+  title: 'MyLibrary/ExtendedBtnComponent',
   component: BtnComponent,
-} as Meta;
+} as Meta
 
-type Story = StoryObj<BtnComponent>;
+type Story = StoryObj<BtnComponent>
 
 export const Primary: Story = {
   args: {
     buttonType: 'primary',
-    label: 'Test'
+    label: 'Test',
   },
-};
+}
+export const PrimaryIcon: Story = {
+  args: {
+    buttonType: 'primary',
+    label: 'Test',
+    icon: 'face',
+  },
+}
 export const Secondary: Story = {
   args: {
-    buttonType: 'secondary'
+    buttonType: 'secondary',
   },
-};
-
+}
