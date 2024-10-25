@@ -1,6 +1,14 @@
-@let btLabel = label;
+<ng-template #btnLabel>
+  <span>></span>{{label !== null ? label : 'go to'}}
+</ng-template>
+
+
 @if (buttonType === 'primary') {
-  <button mat-flat-button class="bt-button"><span>></span>{{btLabel !== null ? btLabel : 'go to'}}</button>
+  <button mat-flat-button class="bt-button">
+    <ng-container></ng-container>
+  </button>
 } @else {
-  <button mat-stroked-button class="bt-button"><span>></span>{{btLabel !== null ? btLabel : 'go to'}}</button>
+  <button mat-stroked-button class="bt-button">
+    <ng-container/>
+  </button>
 }
