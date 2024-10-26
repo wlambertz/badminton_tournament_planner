@@ -1,17 +1,20 @@
 <ng-template #iconTmpl>
   <span class="material-symbols-outlined">{{ icon }}</span>
 </ng-template>
+
 <ng-template #btnLabel>
-  <span *ngIf="!icon; else iconTmpl">> </span>
-  <span>{{ label }}</span>
+  <div class="btn-content">
+    <span *ngIf="!icon; else iconTmpl">> </span>
+    <span>{{ label }}</span>
+  </div>
 </ng-template>
 
 @if (buttonType === 'primary') {
-  <button mat-flat-button>
+  <button (click)="innerCallback()" mat-flat-button>
     <ng-container *ngTemplateOutlet="btnLabel" />
   </button>
 } @else {
-  <button mat-stroked-button>
+  <button (click)="innerCallback()" mat-stroked-button>
     <ng-container *ngTemplateOutlet="btnLabel" />
   </button>
 }

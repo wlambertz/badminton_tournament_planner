@@ -12,13 +12,16 @@ export const Primary: Story = {
   args: {
     buttonType: 'primary',
     label: 'Test',
+    onClick: () => {
+      console.log('clicked')
+    },
   },
 }
 export const PrimaryIcon: Story = {
   args: {
     buttonType: 'primary',
     label: 'Test',
-    icon: 'face',
+    icon: 'rocket',
   },
 }
 export const Secondary: Story = {

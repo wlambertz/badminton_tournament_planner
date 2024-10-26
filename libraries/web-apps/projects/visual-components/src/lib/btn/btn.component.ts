@@ -14,8 +14,13 @@ export class BtnComponent implements OnInit {
   @Input() buttonType: string = 'secondary'
   @Input() label?: string
   @Input() icon?: string
+  @Input() onClick?: () => void
 
   ngOnInit(): void {
     if (!this.label) this.label = 'click me!'
+  }
+
+  innerCallback(): void {
+    if (this.onClick) this.onClick()
   }
 }

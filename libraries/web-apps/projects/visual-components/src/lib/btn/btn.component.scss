@@ -18,4 +18,17 @@ button {
       background-color: transparent;
     }
   }
+
+  div.btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    .material-symbols-outlined {
+      margin-top: -2px;
+    }
+    span:first-child {
+      margin-right: 6px;
+    }
+  }
 }
