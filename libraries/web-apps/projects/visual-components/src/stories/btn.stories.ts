@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/angular'
 import { BtnComponent } from '../lib/btn/btn.component'
 
 export default {
-  title: 'MyLibrary/ExtendedBtnComponent',
+  title: 'MyLibrary/BtnComponent',
   component: BtnComponent,
 } as Meta
 

@@ -10,7 +10,11 @@
     "watch-vc": "ng build --watch --configuration development --project=visual-components",
     "test": "ng test",
     "storybook": "ng run visual-components:storybook",
-    "build-storybook": "ng run visual-components:build-storybook"
+    "build-storybook": "ng run visual-components:build-storybook",
+    "allowedNonPeerDependencies": [
+  "normalize.css"
+],
+
   },
   "private": true,
   "dependencies": {
