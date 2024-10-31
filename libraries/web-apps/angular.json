@@ -38,7 +38,8 @@
             "browserTarget": "visual-components:build",
             "compodoc": false,
             "styles": [
-              "projects/visual-components/src/lib/styles/global-theme.scss"
+              "projects/visual-components/src/lib/styles/global-theme.scss",
+              "node_modules/normalize.css/normalize.css"
             ],
             "port": 6006
           }

@@ -5,10 +5,10 @@
 // Plus imports for other components in your app.
 
 //@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
-//@import "./reset.scss";
+@import "./reset.scss";
+@import '~normalize.css/normalize.css';
 @import "./icons.scss";
 @import "./fonts.scss";
-//@import '~normalize.css/normalize.css';
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
