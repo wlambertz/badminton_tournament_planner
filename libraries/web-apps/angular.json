@@ -3,6 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "assets": [{
+      "glob": "**/*",
+      "input": "projects/visual-components/assets",
+      "output": "assets"
+    }],
     "visual-components": {
       "projectType": "library",
       "root": "projects/visual-components",
@@ -49,7 +54,9 @@
           "options": {
             "configDir": "projects/visual-components/.storybook",
             "styles": [
-              "projects/visual-components/src/lib/styles/global-theme.scss"
+              "projects/visual-components/src/lib/styles/global-theme.scss",
+              "projects/visual-components/src/lib/assets/images/android-chrome-192x192.png",
+              "node_modules/normalize.css/normalize.css"
             ],
             "browserTarget": "visual-components:build",
             "compodoc": false,
