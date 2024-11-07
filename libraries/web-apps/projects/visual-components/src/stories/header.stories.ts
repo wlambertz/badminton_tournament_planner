@@ -12,10 +12,4 @@ export const Default: Story = {
   args: {
     logoPath: "./assets/badtourn_comet_standalone.png",
   },
-  // render: () => ({
-  //   props: {
-  //     src: '/logo.png',
-  //     alt: 'my image'
-  //   }
-  //})
 }
