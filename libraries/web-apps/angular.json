@@ -3,11 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "assets": [{
-      "glob": "**/*",
-      "input": "projects/visual-components/assets",
-      "output": "assets"
-    }],
     "visual-components": {
       "projectType": "library",
       "root": "projects/visual-components",

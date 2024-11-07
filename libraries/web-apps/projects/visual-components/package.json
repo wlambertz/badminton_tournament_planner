@@ -10,7 +10,7 @@
     "tslib": "^2.3.0"
   },
   "exports": {
-    "./assets/**/*": "./assets/**/*"
+    "./lib/assets/**/*": "./assets/**/*"
   },
   "sideEffects": false
 }
