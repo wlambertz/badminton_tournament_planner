@@ -10,6 +10,14 @@ $line-color: #e5e5e5;
   min-height: 50px;
   min-width: 100%;
   border: 0.5px solid $line-color;
+  img {
+    margin-left: 5px;
+  }
+  span.app-name {
+    margin-left: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+  }
 }
 
 /*!

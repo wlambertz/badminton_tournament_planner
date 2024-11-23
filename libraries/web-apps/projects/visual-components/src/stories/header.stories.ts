@@ -10,6 +10,7 @@ type Story = StoryObj<HeaderComponent>
 
 export const Default: Story = {
   args: {
-    logoPath: "./assets/badtourn_comet_standalone.png",
+    logoPath: './assets/badtourn_comet_standalone.png',
+    appName: 'BadTourn',
   },
 }
