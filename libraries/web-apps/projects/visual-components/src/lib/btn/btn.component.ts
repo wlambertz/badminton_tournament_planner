@@ -4,11 +4,10 @@ import { MatIconModule } from '@angular/material/icon'
 import { NgIf, NgTemplateOutlet } from '@angular/common'
 
 @Component({
-  selector: 'bt-comp-btn',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, NgTemplateOutlet, NgIf],
-  templateUrl: './btn.component.html',
-  styleUrl: './btn.component.scss',
+    selector: 'bt-comp-btn',
+    imports: [MatButtonModule, MatIconModule, NgTemplateOutlet, NgIf],
+    templateUrl: './btn.component.html',
+    styleUrl: './btn.component.scss'
 })
 export class BtnComponent implements OnInit {
   @Input() buttonType: string = 'secondary'
