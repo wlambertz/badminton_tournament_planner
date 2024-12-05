@@ -23,7 +23,7 @@
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.5",
     "component-library": "file:../../../../../libraries/web-apps/dist/visual-components/visual-components-0.0.1.tgz",
-    "express": "^4.18.2",
+    "express": "^4.21.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
