@@ -7,12 +7,13 @@
       "projectType": "library",
       "root": "projects/visual-components",
       "sourceRoot": "projects/visual-components/src",
-      "prefix": "bt-comp",
+      "prefix": "bt-vc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/visual-components/ng-package.json"
+            "project": "projects/visual-components/ng-package.json",
+            "tsConfig": "projects/visual-components/tsconfig.lib.json"
           },
           "configurations": {
             "production": {
