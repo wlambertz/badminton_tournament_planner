@@ -8,7 +8,7 @@ import { NgIf, NgTemplateOutlet } from '@angular/common'
   imports: [MatButtonModule, MatIconModule, NgTemplateOutlet, NgIf],
   templateUrl: './btn.component.html',
   standalone: true,
-  styleUrl: './btn.component.scss',
+  styleUrls: ['../styles/_fonts.scss', './btn.component.scss'],
 })
 export class BtnComponent implements OnInit {
   @Input() buttonType: string = 'secondary'
