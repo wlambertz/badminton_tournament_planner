@@ -4,6 +4,7 @@
   "assets": ["./src/assets", "./src/assets/fonts"],
   "lib": {
     "entryFile": "./src/public-api.ts",
-    "styleIncludePaths": ["./src/assets","./src/lib/styles"]
+    "styleIncludePaths": ["./src/assets","./src/lib/styles"],
+    "cssUrl": "inline"
   }
 }
