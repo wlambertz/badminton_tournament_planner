@@ -39,7 +39,7 @@
             "browserTarget": "visual-components:build",
             "compodoc": false,
             "styles": [
-              "projects/visual-components/src/lib/styles/global-theme.scss",
+              "projects/visual-components/src/lib/styles/styles.scss",
               "node_modules/normalize.css/normalize.css"
             ],
             "port": 6006
@@ -50,8 +50,7 @@
           "options": {
             "configDir": "projects/visual-components/.storybook",
             "styles": [
-              "projects/visual-components/src/lib/styles/global-theme.scss",
-              "projects/visual-components/src/lib/assets/images/android-chrome-192x192.png",
+              "projects/visual-components/src/lib/styles/styles.scss",
               "node_modules/normalize.css/normalize.css"
             ],
             "browserTarget": "visual-components:build",
