@@ -13,6 +13,7 @@ const config: StorybookConfig = {
     name: '@storybook/angular',
     options: {},
   },
-  staticDirs: [{ from: '../src/assets/images', to: '/assets' }],
+  staticDirs: [{ from: '../src/assets/fonts', to: '/assets/fonts' },
+    {from: '../src/assets/images', to: '/assets/images' },],
 }
 export default config

@@ -7,18 +7,52 @@ $line-color: #e5e5e5;
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-between;
   min-height: 50px;
   min-width: 100%;
   border: 0.5px solid $line-color;
+  .navigation {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
   img {
     margin-left: 5px;
   }
   span.app-name {
     margin-left: 10px;
-    letter-spacing: 1.5px;
-    font-weight: 300;
+    letter-spacing: 4px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  button {
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    span {
+      font-size: 24px;
+      font-weight: 100;
+    }
   }
 }
+
+.app-logo {
+  background-image: url('../../assets/images/badtourn_comet_standalone.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  min-height: 36px;
+  min-width: 36px;
+}
+
 
 /*!
  * Hamburgers

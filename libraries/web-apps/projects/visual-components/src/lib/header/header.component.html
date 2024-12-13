@@ -1,22 +1,18 @@
 <div class="header-box">
-  <button
-    id="hamburger"
-    class="hamburger hamburger--collapse"
-    [ngClass]="{ 'is-active': isHamburgerOpen }"
-    type="button"
-    (click)="isHamburgerOpen = !isHamburgerOpen"
-  >
+  <div class="navigation">
+    <button
+      id="hamburger"
+      class="hamburger hamburger--collapse"
+      [ngClass]="{ 'is-active': isHamburgerOpen }"
+      type="button"
+      (click)="this.toggleMenu($event)"
+    >
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
-  </button>
-  <img
-    src="{{ logoPath }}"
-    alt="logo"
-    width="40px"
-    height="40px"
-    class="logo"
-  />
-  <span class="app-name">{{ appName }}</span>
-<!--  <bt-comp-btn [buttonType]="'primary'" [icon]="'search'"></bt-comp-btn>-->
+    </button>
+    <div class="app-logo"></div>
+    <span class="app-name">{{ title }}</span>
+  </div>
+  <button id="search" (click)="toggleSearch($event)"><span class="material-symbols-outlined">search</span></button>
 </div>
