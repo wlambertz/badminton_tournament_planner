@@ -8,6 +8,10 @@ button {
     font-weight: 400;
     letter-spacing: 2px;
 
+    &.accent {
+      background-color: #0fc0fc;
+    }
+
     &[mat-stroked-button] {
       border: 1px solid black;
       color: black;

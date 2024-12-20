@@ -9,8 +9,8 @@
   </div>
 </ng-template>
 
-@if (buttonType === 'primary') {
-  <button (click)="innerCallback()" mat-flat-button>
+@if (buttonType === BtnType.primary || buttonType === BtnType.accent) {
+  <button (click)="innerCallback()" [ngClass]="{accent: buttonType === BtnType.accent}" mat-flat-button>
     <ng-container *ngTemplateOutlet="btnLabel" />
   </button>
 } @else {

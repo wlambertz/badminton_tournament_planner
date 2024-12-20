@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/angular'
-import { BtnComponent } from '../lib/btn/btn.component'
+import { BtnComponent, BtnType } from '../lib/btn/btn.component'
 
 export default {
   title: 'MyLibrary/BtnComponent',
@@ -10,7 +10,7 @@ type Story = StoryObj<BtnComponent>
 
 export const Primary: Story = {
   args: {
-    buttonType: 'primary',
+    buttonType: BtnType.primary,
     label: 'Test',
     onClick: () => {
       console.log('clicked')
@@ -19,13 +19,18 @@ export const Primary: Story = {
 }
 export const PrimaryIcon: Story = {
   args: {
-    buttonType: 'primary',
+    buttonType: BtnType.primary,
     label: 'Test',
     icon: 'rocket',
   },
 }
 export const Secondary: Story = {
   args: {
-    buttonType: 'secondary',
+    buttonType: BtnType.secondary,
+  },
+}
+export const Accent: Story = {
+  args: {
+    buttonType: BtnType.accent,
   },
 }
