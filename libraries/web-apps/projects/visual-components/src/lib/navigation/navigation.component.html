@@ -1,1 +1,17 @@
-<p>navigation works!</p>
+<div class="content-container">
+  <mat-drawer-container>
+    <mat-drawer mode="over" #drawer class="navigation">
+      <div class="navigation">
+        test
+        <button (click)="drawer.toggle()">close</button>
+      </div>
+    </mat-drawer>
+    <mat-drawer-content>
+      @if (devMode) {
+        <button (click)="drawer.toggle()">OpenMenu</button>
+      }
+      <ng-content></ng-content>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
+

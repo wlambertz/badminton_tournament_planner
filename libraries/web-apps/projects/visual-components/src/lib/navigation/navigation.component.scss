@@ -1,0 +1,11 @@
+.content-container {
+  box-sizing: content-box;
+  min-height: 100vh;
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+  }
+}
